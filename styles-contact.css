@@ -1,0 +1,290 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	
+	
+}
+
+.center {
+    width: 600px;
+	padding: 0%;
+    margin: 0 auto 0 auto;
+ 	margin-top:200px;
+	text-align: center;
+	border: 0px solid rgb(63, 91, 193);
+}
+
+.center p{
+	font-family: 'Koulen', cursive;
+	font-size: 1.2em;
+    line-height: 1;
+    text-shadow: 2px 2px #000000;
+    color: rgb(255, 255, 255);
+}
+
+   
+#logo {
+    margin-bottom: 10px;
+	border: 0px dashed rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.728); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Koulen', cursive;
+	font-size: 4em;
+	top: 5%;
+  text-shadow: 2px 2px #000000;
+    margin: 1px auto 10px auto;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+	font-family: 'Koulen', cursive;
+	font-size: 2.5em;
+    line-height: 1.;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    text-shadow: 2px 2px #000000;
+    margin: 0px auto 25px auto;
+}
+
+    
+    nav{
+		font-family: 'Koulen', cursive;
+		font-size: 1.2em;
+		width: 500px;
+		margin: 0 auto;
+		border-width: 3px 0;
+		position: fixed;
+		top: 1.5%;
+		text-align: center;
+		margin-top: em;
+
+	}
+nav li {
+	display: inline
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: rgb(251, 251, 251);
+	text-decoration: none;
+}
+
+
+a:hover {
+	color: rgb(63, 91, 193);
+	background: rgb(252, 252, 252);
+} 
+ /* Code for cards */
+
+/* sets everything to zero */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .cardphoto img {
+    display: block;
+    max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+  }
+ 
+  /* make the Section class cards here.  */
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+ 
+  /* make the card flex. The default is row so change flex direction to vertical. */
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cardphoto {
+    max-height: 250px;
+    overflow: hidden;
+  }
+ 
+  .cardarticle {
+    padding: 2.5rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardH1 {
+    font-family: 'Koulen', cursive;
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+ 
+  .card p {
+    font-family: 'Koulen', cursive;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+ 
+  .card footer {
+      font-family: 'Koulen', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3{
+      color:rgb(0, 0, 0);
+  }
+ 
+  .card p {
+      color: rgb(63, 91, 193);
+  }
+  /* Code for cards */
+
+/* sets everything to zero */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cardphoto img {
+  display: block;
+  max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+}
+
+/* make the Section class cards here.  */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* make the card flex. The default is row so change flex direction to vertical. */
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+}
+.card:hover {
+  transition: all 0.1s ease-in;
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cardphoto {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.cardarticle {
+  padding: 2.5rem;
+  flex-grow: 1;
+}
+
+
+
+
+
+
